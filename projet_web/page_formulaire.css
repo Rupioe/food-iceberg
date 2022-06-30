@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    background-color: rebeccapurple;
+    font-family : sans-serif;
+}
+
+#tete{
+    position: absolute;
+    width: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 85%;
+    text-align: center;
+    line-height: 290%;
+    font-size: 50px;
+    background-color: #1BB6DE;
+}
+
+#menu {
+	background-color : #2A96F5;
+    position: absolute;
+    top: 15%;
+    bottom: 75%;
+	text-align : center;
+	font-size : 50px;
+    line-height: 180%;
+	width : 100%;
+}
+
+form{
+    position: absolute;
+    top: 25%;
+    bottom: 8%;
+    width: 100%;
+    text-align: center;
+    background-color: #1BB6DE;
+}
+
+input{
+    width: 10%;
+    height: 35px;
+}
+
+#bas {
+	background-color : #1B4FDE;
+	position: absolute;
+    top: 92%;
+    bottom: 0;
+	text-align : center;
+	font-size : 50px;
+	width : 100%;
+    line-height: 149%;	
+}

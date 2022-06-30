@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head> 
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<script type="text/javascript" src="page_formulaire.js"></script>
+        <link href="page_formulaire.css" rel="stylesheet" type="text/css"/>
+		<meta charset="utf-8">
+        <link rel="icon" href="icon.png">
+		<title> FORMULAIRE </title>
+	</head>
+	<body>
+        <div id="tete">
+            Proposez une nourriture ! 
+        </div>
+        <div id="menu">
+            | <a href="Page_accueil.html" style="text-decoration:none">Accueil</a> |
+            <a href="page_formulaire.html" style="text-decoration:none">Proposer une nourriture</a> |
+        </div> 
+        <div id="formulaire">
+            <br>
+            <br>
+            <br>
+            <br>
+            <form action="" method="get">
+                &thinsp;
+                <label for="nom"> Nom : </label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;
+                <label for="Prenom"> Prénom : </label>
+                <br>
+                <input type="text" id="nom">
+                <input type="text" id="Prenom">
+                <br><br>
+                <label for="Mail"> adresse Mail :</label><br>
+                <input type="text" id="Mail">
+                <br><br>
+                <label for="titre">Nom de la nourriture</label>
+                <br>
+                <input type="text" id="nourriture">
+                <br><br>
+                <label for="commentaire"> Descritpion :</label>
+                <br>
+                <textarea id="commentaire" style="text-align:top,left; overflow:auto; width:500px; height:300px;" onclick="edition()">
+                    Décrivez rapidement votre nourriture et pourquoi devrait-on l'ajouter à notre site
+                </textarea>
+                <br>
+                <br>
+                <div id="ligne button">
+                    <input type="button" value="Confirmer" onclick="verif()">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </form>
+        </div>
+        <div id="bas"><span>Etat de l'envoi : </span><span id="etat">Complétion en cours</span></div>
+	</body>
+</html>
